@@ -1,0 +1,17 @@
+
+
+<div>
+<h1>How this works</h1>
+
+<p> I am an artist, the curator appreciate my finished works of art. I trust him. He helps me to show, tell and sell my art. I do not need to be friends with collectors because my agent is my friend and he does everything for me.</p>
+
+<p>I am a curator, I like to be friends with artists and collectors, I am a liason between them, this means I do not own any work of art. just help the artist</p> 
+
+	Pieces
+
+
+</div>
+
+	<% @pieces.each do |shw| %>
+		<%= button_to "show", "/pieces/#{shw.id}", :method => :get %>
+		<% end %>

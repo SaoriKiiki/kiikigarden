@@ -1,0 +1,9 @@
+<%= form_for @piece do |f| %>
+  Image view : <%= f.text_field :url %><br />
+  Material : <%= f.text_field :raw_material %><br />
+  Explain : <%= f.text_area :concept_description %><br />
+  First price    : <%= f.text_field :cost %><br />
+  <%= f.submit %>
+<% end %>
+
+   

@@ -1,0 +1,5 @@
+<%= form_for @price_offer do |f| %>
+  Opening Offer: <%= f.text_field :offer %><br />
+  <%=collection_select(:price_offer, :piece_id, Piece.all, :id, :concept_description)%>
+  <%= f.submit %>
+<% end %>
