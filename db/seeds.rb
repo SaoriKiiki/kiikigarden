@@ -18,7 +18,16 @@ collector = Role.create (name: "collector")
 
 
 #Regards to Piece and Price_offers
+#index
+@price_offers = PriceOffer.all 
+@pieces = Piece.all
+
+
+#new
 @price_offer = PriceOffer.new
+@piece = Piece.new
+
+
 
 #AlertNotice
 
