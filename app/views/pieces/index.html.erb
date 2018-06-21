@@ -1,17 +1,61 @@
 
 
-<div>
-<h1>How this works</h1>
-
-<p> I am an artist, the curator appreciate my finished works of art. I trust him. He helps me to show, tell and sell my art. I do not need to be friends with collectors because my agent is my friend and he does everything for me.</p>
-
-<p>I am a curator, I like to be friends with artists and collectors, I am a liason between them, this means I do not own any work of art. just help the artist</p> 
-
-	Pieces
+<section class="my_title">
+HOW THIS WORKS 
+</section>
 
 
-</div>
 
-	<% @pieces.each do |shw| %>
-		<%= button_to "show", "/pieces/#{shw.id}", :method => :get %>
-		<% end %>
+
+<div class="row">
+	<div class="my_text newspaper col-3">	
+	Curator's role
+	<i class="fas fa-frog" style=" font-size:200px;color:pink"></i>
+	</div>
+	<div class="my_text newspaper col-3">	
+	Collector's role
+	<i class="fas fa-fish" style=" font-size:200px;color:pink"></i>
+	</div>
+	<div class="my_text newspaper col-3">	
+	Artist's role
+	<i class="fas fa-feather-alt" style=" font-size:200px;color:pink"></i>
+	</div>
+
+
+
+
+
+<div class="row">
+	<div class="my_text newspaper col-3">	
+	Work of art
+	<i class="fas fa-palette" style=" font-size:200px;color:pink"></i>
+	</div>
+	<div class="my_text newspaper col-3">	
+	Cost of art production
+	<i class="fas fa-kiwi-bird" style=" font-size:200px;color:pink"></i>
+	</div>
+
+
+
+
+
+<div class="row">
+	<div class="my_text newspaper col-3">	
+	Opening offer
+	<i class="fas fa-pen-alt" style=" font-size:200px;color:pink"></i>	
+	</div>
+	<div class="my_text newspaper col-3">	
+	Counter offer
+	<i class="fas fa-paper-plane" style=" font-size:200px;color:pink"></i>	
+	</div>
+	<div class="my_text newspaper col-3">	
+	Closing offer
+	<i class="fas fa-handshake" style=" font-size:200px;color:pink"></i>	
+	</div>
+
+
+
+
+<% @pieces.each do |shw| %>
+<%= button_to "show", "/pieces/#{shw.id}", :method => :get %>
+<% end %>

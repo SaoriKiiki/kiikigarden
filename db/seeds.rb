@@ -17,6 +17,7 @@ curator = Role.create (name: "curator")
 collector = Role.create (name: "collector")
 
 
+
 #Regards to Piece and Price_offers
 #index
 @price_offers = PriceOffer.all 
