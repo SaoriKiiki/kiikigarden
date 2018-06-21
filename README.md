@@ -7,5 +7,5 @@ An app for curators, artists and collectors doing auction commerce
 
 * System dependencies 
 ### 'devise', '~> 4.4'
-###'bootstrap', '~> 4.1.1'
+### 'bootstrap', '~> 4.1.1'
 
