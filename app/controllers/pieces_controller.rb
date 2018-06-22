@@ -1,26 +1,23 @@
 class PiecesController < ApplicationController
 before_action :find_pieces, only: [:show, :edit, :update, :destroy]
 
-	def introduction
-
-	end
-
 	def index
 		@pieces = Piece.all
-
 	end	
+  
+	def show   
+    end
 
+    def pieces_show
+    	@pieces = Piece.all
+   end
    def create
         @piece = Piece.create(piece_params)
         redirect_to "/pieces/#{@piece.id}"
-   end   
+   end 
 
    def new
    	@piece = Piece.new
-   end
-
-   def show 
-
    end
 
 
@@ -30,9 +27,6 @@ private
 		params.require(:piece).permit(:url, :artist_id, :raw_material, :concept_description, :cost) 
 	end	
 	def find_pieces
-		@piece = Piece.find(params[:id])
+		@pieces = Piece.find(params[:id])
 	end
-
-
-
 end

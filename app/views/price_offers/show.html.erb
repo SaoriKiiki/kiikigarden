@@ -2,4 +2,7 @@
 <%= @price_offer.offer%>
 
 
+<% @piece.price_offers.each do |pieprioff| %>
+<%= button_to "show", "/price_offers/#{pieprioff.id}", :method => :get %>
+<% end %>
 

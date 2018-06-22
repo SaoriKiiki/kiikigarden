@@ -8,6 +8,16 @@ class PriceOffersController < ApplicationController
 	def show
 	end
 
+	def opening
+	end
+
+	def interations
+	end
+
+	def closing
+	end
+
+
 	def new
 		@price_offer = PriceOffer.new
 	end
@@ -16,6 +26,9 @@ class PriceOffersController < ApplicationController
 		@price_offer = PriceOffer.create(price_offers_params)
         redirect_to "/price_offers/#{@price_offer.id}"
 	end
+
+	
+
 private
 
 	def price_offers_params

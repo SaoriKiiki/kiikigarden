@@ -1,61 +1,72 @@
 
 
+
+
+<%=image_tag("logo.png")%>
+<div class="row my_margn_btw_row">
+
 <section class="my_title">
 HOW THIS WORKS 
 </section>
 
 
+	<div class="my_text newspaper col-3">	
+Curator
+ 	<i class="fas fa-frog fa-4x fa-pull-left"></i>
+	<audio controls>
+ 	 <source src="vincent.wav" type="audio/wav"/>
+	</audio>
+ 	</div>
 
-
-<div class="row">
 	<div class="my_text newspaper col-3">	
-	Curator's role
-	<i class="fas fa-frog" style=" font-size:200px;color:pink"></i>
-	</div>
-	<div class="my_text newspaper col-3">	
-	Collector's role
-	<i class="fas fa-fish" style=" font-size:200px;color:pink"></i>
-	</div>
-	<div class="my_text newspaper col-3">	
-	Artist's role
-	<i class="fas fa-feather-alt" style=" font-size:200px;color:pink"></i>
+Collector
+	<i class="fas fa-fish fa-4x fa-pull-left"></i>
 	</div>
 
-
-
-
-
-<div class="row">
 	<div class="my_text newspaper col-3">	
-	Work of art
-	<i class="fas fa-palette" style=" font-size:200px;color:pink"></i>
+Artist
+	<i class="fas fa-leaf fa-4x"></i>
 	</div>
-	<div class="my_text newspaper col-3">	
-	Cost of art production
-	<i class="fas fa-kiwi-bird" style=" font-size:200px;color:pink"></i>
 	</div>
 
 
 
 
-
-<div class="row">
+<div class="row my_margn_btw_row">
 	<div class="my_text newspaper col-3">	
-	Opening offer
-	<i class="fas fa-pen-alt" style=" font-size:200px;color:pink"></i>	
+Art
+	<%= link_to "/pieces_show" do %>
+		<i class="fas fa-stamp fa-4x"> </i> <%end%>
 	</div>
 	<div class="my_text newspaper col-3">	
-	Counter offer
-	<i class="fas fa-paper-plane" style=" font-size:200px;color:pink"></i>	
+Cost 
+	<i class="fas fa-money-bill-alt fa-4x" ></i>
 	</div>
 	<div class="my_text newspaper col-3">	
-	Closing offer
-	<i class="fas fa-handshake" style=" font-size:200px;color:pink"></i>	
+Market 
+	<i class="fas fa-chart-area fa-4x"></i>
+	</div>
 	</div>
 
 
 
 
-<% @pieces.each do |shw| %>
-<%= button_to "show", "/pieces/#{shw.id}", :method => :get %>
-<% end %>
+<div class="row my_margn_btw_row">
+	<div class="my_text newspaper col-3">	
+Opening 
+	<i class="fas fa-anchor fa-4x"></i>	
+	</div>
+	<div class="my_text newspaper col-3">	
+Interactions 
+	<i class="fas fa-cog fa-pulse fa-4x"> </i>
+	</div>
+	<div class="my_text newspaper col-3">	
+Closing 
+	<i class="fas fa-handshake fa-4x"> </i>
+	</div>
+	</div>
+
+
+
+
+

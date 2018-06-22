@@ -6,8 +6,27 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+
 #Regarding User Session
 #email form callled _request_from_user to the Curator #https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form
+
+.fas:hover {
+		color:aqua;
+	}
+
+.fas:visited {
+		color:gray;
+	}	
+
+
+<div class="row my_margn_btw_row">
+	<div class="my_text newspaper col-3">	
+Art
+	<a title="this text appears when you hover" href="/pieces/pieces_show">
+	<i class="fas fa-stamp fa-4x"> </i></a>
+	</div>
+	<div class="my_text newspaper col-3">	
 
 
 => Role(id: integer, name: string, created_at: datetime, updated_at: datetime)
@@ -51,4 +70,5 @@ puts "Another collector offered #{@first_counter_offer.id} #{@currency.id}.  "
 #Regarding Collector Session
 #Create form called _request_to_collector
 #Create form called _request_to_event
+
 
