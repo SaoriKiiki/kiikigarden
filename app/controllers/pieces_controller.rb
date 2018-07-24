@@ -5,20 +5,20 @@ before_action :find_pieces, only: [:show, :edit, :update, :destroy]
 		@pieces = Piece.all
 	end	
   
-	def show   
+    def show   
     end
 
     def pieces_show
-    	@pieces = Piece.all
-   end
-   def create
+       	@pieces = Piece.all
+    end
+    def create
         @piece = Piece.create(piece_params)
         redirect_to "/pieces/#{@piece.id}"
-   end 
+    end 
 
-   def new
+    def new
    	@piece = Piece.new
-   end
+    end
 
 
 private
