@@ -1,6 +1,13 @@
 
+.muli {
+    font-family: 'Muli';
+    font-size: 30px;
+}
+
 body.my_body {
+	background-color: rgb(210, 210, 210);
 	margin: 35px;
+	top: 250 px;
 	}
 
 section.my_title {
@@ -38,9 +45,8 @@ div.my_margn_btw_row {
 }
 
 .fas {
-	color:lightgray;
+	color:white;
 	text-shadow:1px 1px 1px,
 }
-
 
 
