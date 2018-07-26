@@ -23,23 +23,11 @@
 
 </head>
 
-<body class="my_body">
+    <body class="my_body">
+<%= render "/navbar_top" %>
 
-    <%=image_tag("bySaori.png")%>
-
-       <% if user_signed_in? %>
-
-          <div ><%= link_to current_user.email, edit_user_registration_path %></div>>
-           <div><%= link_to "Logout", destroy_user_session_path, method: :delete %></div>
-
-    <% else %>
- 
-          <div class="my_margn_btw_row"><%= link_to "Sign Up", new_user_registration_path %></div>
-           <div><%= link_to "Login", new_user_session_path %></div> 
-           <p class="Notice"><%= notice %></p>
-            <p class="Alert"><%= alert %></p>
-    <% end %>
-    <%= yield %>
+<%= yield %>
 </body>
 
 </html>
+<%= render "/navbar_foot" %>

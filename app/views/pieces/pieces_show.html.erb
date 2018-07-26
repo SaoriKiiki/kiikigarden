@@ -1,3 +1,7 @@
-<% @pieces.each do |shw| %>
-<%= button_to "show", "/pieces/#{shw.id}", :method => :get %>
-<% end %>
+<head></head>
+
+<body>
+	<% @pieces.each do |shw| %>
+	<%= button_to "show", "/pieces/#{shw.id}", :method => :get %>
+	<% end %>
+</body>	

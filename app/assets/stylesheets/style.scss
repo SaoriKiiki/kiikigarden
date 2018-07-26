@@ -20,33 +20,16 @@ section.my_title {
     margin: 65px 5px 45px 38px;
     }
 
-div.my_text {
-	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-	font-size: 15px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 20px;
-	margin: 15px 0px 0px 75px;
-}
-
-div.newspaper {
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
-}
-
-div.my_in_btween {
+.my_in_btween {
 	margin: 10px 50px 10px 50px
 }
 
-div.my_margn_btw_row {
-	margin: 45px 0px 0px 0px
+i.my_margn_btw {
+	margin: 45px 200px 20px 50px
 }
 
 .fas {
-	color:white;
+	color: rgba(200,200,200,10);
 	text-shadow:1px 1px 1px,
 }
-
 
