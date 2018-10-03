@@ -1,6 +1,6 @@
 #### README
 
-<a href="https://kiikigarden.herokuapp.com/">Demo</a>
+#<a href="https://kiikigarden.herokuapp.com/">Demo</a>
 
 An app for curators, artists and collectors doing auction commerce
 
