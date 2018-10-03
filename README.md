@@ -4,12 +4,7 @@
 
 An app for curators, artists and collectors doing auction commerce
 
-*PostgressSQL to deploy
-
-* Ruby version  
-#### '2.5.1'
-
-* System dependencies 
-#### 'devise', '~> 4.4'
-#### 'bootstrap', '~> 4.1.1'
+Ruby~>2.5.1
+Rails
+System dependencies devise~> 4.4, bootstrap~>4.1.1, pg(to deploy)
 
